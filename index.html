@@ -7,10 +7,10 @@
         <meta name="description" content="RPG AVR, um sistema intuitivo, rápido e fácil de jogar e narrar.">
         <meta name="keywords" content="conteúdo,RPGAVR,registro">
         <meta name="author" content="Wilson Costa">
- <head>     
+ <head>     
      <style>
      h1 {text-align: left; color: #A0522D; font-size: 9pt; font-family: "Times New Roman", Century, "Book Antiqua";}
-     h2 {text-align: left; color: black; font-size: 22pt; font-family: "Times New Roman", Century, "Book Antiqua";}
+     h2 {text-align: left; color: black; font-size: 22pt; font-family: "Times New Roman", Century, "Book Antiqua";}
    h4 {text-align: center; color: black; font-size: 11pt; font-family: "Times New Roman", Century, "Book Antiqua";}
 			 body{ background-color:#FFDEAD; }
    .amazon{text-align: center; color: black; font-size: 7pt; font-family: "Times New Roman", Century, "Book Antiqua";}
@@ -19,6 +19,72 @@
       .left{background-color:#FFDEAD; float: left; width:100px; margin:0 auto; text-align:center; font-size: 9pt; border:2px white; }     
      .livro{text-align: center; float: center; font-size: 7pt; color: black;}
      .contato{text-align: center; font-size: 9pt; color: black;}
+    
+p {width:100%; margin: 0 auto;}
+.left{ /*25% + .6% + .6%= 26.2%*/
+  width:25%;
+  background:aquamarine;
+  padding:0.6% 0.6%;
+  float:left;
+}
+.centro{ /*44% + .6% + 0.6 + 1.2% (margem esquerda) + 1.2%(margem direita) = 47.6%*/
+  width:44%;
+  margin:0 1.2%;
+  padding:0.6% 0.6%;
+  background:burlywood;
+  float:left;
+}
+.right{/*25% + .6% + .6%= 26.2%*/
+  width:25%;
+  padding:0.6% 0.6%;
+  background:darkseagreen;
+  float:left;
+}
+.fig{
+  width:100%;
+  max-height:100%;
+}
+/* CSS para monitores com menos de 900px de largura */
+    @media screen and (max-width: 900px) {
+        p{
+      width:100%;
+    }
+        .left,p{
+21/09/2020 Livro da Unidade 04
+https://distancia.qi.edu.br/mod/book/tool/print/index.php?id=49729 22/40
+      width:46.4%; /*Calcula o que falta*/
+      float:left;
+      margin:0 1.2%; /*mantem*/
+      padding: 0.6%;
+    }
+    .right{
+      width:100%;
+      clear:both; /*Ocupa todo o espaço*/
+    }
+    }
+
+ /* CSS para monitores com menos de 600px de largura */  
+  @media screen and (max-width: 600px) {
+        p{
+      width:100%;
+    }
+        .left,p,.right {
+      width:100%;
+      float:none;
+      margin:0;
+    }
+    }
+    /* CSS para monitores com menos de 480px de largura */
+    @media screen and (max-width: 480px) {
+    .left,p{
+      width:100%;
+      float:none;
+    }
+    .right{
+      display:none;
+    }
+    }
+
 </style>
 </head>
     <body>
@@ -26,7 +92,7 @@
                 <tr> <th>Ultima atualização:</tr>
                 <tr> <td>17/09/2020 10:15 AM</td> </tr> </table>   
        </h1>   
-          <header id=“topo”>    <h2> RPG AVR  </h2>  </header>
+          <header id=“topo”>    <h2> RPG AVR  </h2>  </header>
             <hr>
         <p class="texto"> 
           <a href="https://chat.whatsapp.com/LIMjCN8LhZrEQSUw38Mm84"> <img  src="logoavr1.png" alt="Logo AVR."> </a>              
@@ -37,15 +103,15 @@
 </h4>
 <p>Um RPG prático de jogar e de narrar, com apenas 1d6, (dado de 6 lados), explore o cenário fantástico das Ilhas Soturnas, com 12 raças jogáveis, 16 classes e 72 habilidades únicas. O livro traz a crônica para conhecer a história, o cenário completo com raças, classes, mapa mundi e o sistema completo: RPG AVR, um sistema intuitivo, rápido e fácil de aprender e ensinar.</p>  </aside>
  <br>                                         
-         <nav  id="cssmenu">      
-<ul>         
+         <nav  id="cssmenu">      
+<ul>         
 <div  class="left">
-<nav  id="cssmenu">   
-<ul>                
+<nav  id="cssmenu">   
+<ul>                
  <li><strong>Facebook</strong> <a href="https://www.facebook.com/RPGAVR"> <img  src="logo8.png" alt="Facebook."></a></li>
- <li><strong>Vídeos</strong> <a href="https://www.youtube.com/playlist?list=PL7i-9wvYK5ekZiyavjnnqpW13-zO0jwMK"><img  src="logo9.png" alt="Youtube."></a></li>               <li><strong>Podcast</strong> <a href="https://open.spotify.com/show/6c49PcY0BajblryJ"> <img  src="logo10.png" alt="Spotify."></a></li> </ul>     
+ <li><strong>Vídeos</strong> <a href="https://www.youtube.com/playlist?list=PL7i-9wvYK5ekZiyavjnnqpW13-zO0jwMK"><img  src="logo9.png" alt="Youtube."></a></li>               <li><strong>Podcast</strong> <a href="https://open.spotify.com/show/6c49PcY0BajblryJ"> <img  src="logo10.png" alt="Spotify."></a></li> </ul>     
 </nav></div>  
-       <div  class="right">        
+       <div  class="right">        
         <a href="https://drive.google.com/folderview?id=1Xvd49ivyGIQ9t8hc2738CK-ooogPaLce"> <img src="baixar3.png" alt="logoavr"></a>
         <a href="https://www.facebook.com/BarDoGerva/"> <img src="apoio.png" alt="BardoGerva"></a>
     </div> </p>        
@@ -57,6 +123,6 @@
         <br> 
         <br>        
          </div>      
- <footer  id="rodape">         <address>📩 Contato: rpgacaovreacao@gmail.com         </address> </footer>                          
+ <footer  id="rodape">         <address>📩 Contato: rpgacaovreacao@gmail.com         </address> </footer>                          
         </body>
 </html>

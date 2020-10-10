@@ -22,7 +22,9 @@ h4{text-align: center; color: black; font-size: 22pt; font-family: "Arial", Cent
   .footer{text-align: center; font-size: 15pt; color: black;}
  .botao{float: left;}
   .informacao{float: right;}
-@media (max-width: 600px) {.informaçao {display: none;}}
+@media only screen and (max-width: 980px){
+        .mobile { display: none; }
+    }
 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </style>
@@ -48,7 +50,7 @@ h4{text-align: center; color: black; font-size: 22pt; font-family: "Arial", Cent
 </header>
          </div> 
          <br>                                               
-  <div class="texto">  <h3> <strong>RPG AVR: CLASSIC FANTASY</strong> <img  src="info.png" alt="Ative a rotação.">
+  <div class="texto">  <h3> <strong>RPG AVR: CLASSIC FANTASY</strong> 
 </h3>
 <br>
 <asside><h4> <strong></strong></h4><br> 
@@ -66,6 +68,7 @@ Este livro contém três raças, 16 tipos de classes, 99 habilidades e regras pa
 <div class="botao">
 <a href="página22.html" rel="noopener noreferrer"><button type="button" class="btn btn-warning">Última</button>
 <a href="página2.html" rel="noopener noreferrer"><button type="button" class="btn btn-warning">Próximo</button></div>
+<div class="mobile"> <img  src="info.png" alt="Ative a rotação."> </div>
 </a>
            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

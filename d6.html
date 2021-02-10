@@ -19,13 +19,13 @@ function rollDice(){
     var status = document.getElementById("status");
     var d1 = Math.floor(Math.random() * 6) + 1;
     die1.innerHTML = d1;
-    status.innerHTML = "You rolled "+".";
+    status.innerHTML = "VOCÊ ROLOU "+"d1";
 }
 </script>
 </head>
 <body>
 <div id="die1" class="dice">0</div>
-<button onclick="rollDice()">ROLAR D6</button>
+<button onclick="rollDice()">ROLAR DADO </button>
 <h2 id="status" style="clear:left;"></h2>
 </body>
 </html>

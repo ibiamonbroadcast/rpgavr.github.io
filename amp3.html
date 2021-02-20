@@ -48,9 +48,12 @@ h5{text-align: center; color: black; font-size: 16pt; font-family: "Arial", Cent
   <div class="texto">  <h3> <strong></strong>
 </h3>
 <br>
-<audio id="player" autoplay="autoplay" controls="controls" loop>
+<div>
+	  <button onclick="document.getElementById('player').play()">Play</button>
+	  <button onclick="document.getElementById('player').pause()">Pause</button>
+
+	<audio id="player" autoplay="autoplay" loop>
 	  <source src="avrtema.mp3" type="audio/mp3" />
-	  seu navegador não suporta HTML5
 	</audio>
 <br><br><br>
 <div class="footer">

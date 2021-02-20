@@ -27,6 +27,29 @@ h5{text-align: center; color: black; font-size: 16pt; font-family: "Arial", Cent
 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </style>
+<script>function setColor(e) {
+   var target = e.target,
+       status = e.target.classList.contains('active');
+
+   e.target.classList.add(status ? 'inactive' : 'active');
+   e.target.classList.remove(status ? 'active' : 'inactive'); 
+}
+
+.active {
+  background-color: #7FFF00;  
+}
+
+.inactive {
+  background-color: #FFFFFF;
+}
+
+<input 
+  type="button" 
+  id="button" 
+  value="button" 
+  style="color:white" 
+  onclick="setColor(event)" 
+/></script>
 </head>
     <body> 
 <div class="cabeca"> <header id=“topo”>    <h2><strong><img  src="logoavr666.jpg" alt="RPG AVR"></strong> </h2>  
@@ -56,30 +79,6 @@ h5{text-align: center; color: black; font-size: 16pt; font-family: "Arial", Cent
 	<audio id="player" autoplay="autoplay" loop>
 	  <source src="avrtema.mp3" type="audio/mp3" />
 	</audio>
-
-function setColor(e) {
-   var target = e.target,
-       status = e.target.classList.contains('active');
-
-   e.target.classList.add(status ? 'inactive' : 'active');
-   e.target.classList.remove(status ? 'active' : 'inactive'); 
-}
-
-.active {
-  background-color: #7FFF00;  
-}
-
-.inactive {
-  background-color: #FFFFFF;
-}
-
-<input 
-  type="button" 
-  id="button" 
-  value="button" 
-  style="color:white" 
-  onclick="setColor(event)" 
-/>
 
 <br><br><br>
 <div class="footer">

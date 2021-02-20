@@ -49,13 +49,38 @@ h5{text-align: center; color: black; font-size: 16pt; font-family: "Arial", Cent
   <div class="texto">  <h3> <strong></strong>
 </h3>
 <br>
-<div class="botao1">
+<div>
 	  <button onclick="document.getElementById('player').play()">Play</button>
 	  <button onclick="document.getElementById('player').pause()">Pause</button>
 
 	<audio id="player" autoplay="autoplay" loop>
 	  <source src="avrtema.mp3" type="audio/mp3" />
 	</audio>
+
+function setColor(e) {
+   var target = e.target,
+       status = e.target.classList.contains('active');
+
+   e.target.classList.add(status ? 'inactive' : 'active');
+   e.target.classList.remove(status ? 'active' : 'inactive'); 
+}
+
+.active {
+  background-color: #7FFF00;  
+}
+
+.inactive {
+  background-color: #FFFFFF;
+}
+
+<input 
+  type="button" 
+  id="button" 
+  value="button" 
+  style="color:white" 
+  onclick="setColor(event)" 
+/>
+
 <br><br><br>
 <div class="footer">
 <address> <div class= "rodape"><strong>rpgacaovreacao@gmail.com</strong></div></address>® 2020</div></footer></div>
@@ -73,3 +98,6 @@ h5{text-align: center; color: black; font-size: 16pt; font-family: "Arial", Cent
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html> 
+
+link
+https://rpgavr.tk/amp3
